@@ -1,13 +1,49 @@
 <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="CSS/styles.css" rel="stylesheet"> 
+    <link rel="icon" href="sim.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet"> 
+    <title>Hello, world!</title>
+  </head>
+  <body style="color: rgb(241, 241, 234); background-color: rgb(0, 0, 0); width: 100%; position: absolute; display: flex; flex-direction:column; min-height: 100vh;">
+    <!-- Begin: Main description area -->
+    <div id="self-desc" class="main-desc">
+      <h1  style="color: rgb(241, 241, 234); background-color: rgb(0, 0, 0); align-self: center;">
+          Hi there! <div class="wave">👋</div></br> </br> I'm Simone Formisano, 
+        </br>a software developer </br> based in Naples.
+      </h1>
+      <div id="self-img" ondrop="drop_handler(event)" ondragover="dragover_handler(event)" onclick="addRotationToPic()" class="selectDisable self-img-fadein prof-image">
+        <img src="sim.svg" width="500" >
+      </div>
+    </div>
+    <!-- End: Main description area -->
+    
+    <!-- Begin: Referral buttons -->
+    <div id="profile-buttons" class="prof-buttons">
+      <button type="button" class="main-btn" onclick="window.location.href=window.open(portfolioLink,'_blank');">
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <img src="Icons/icons8-notion-48.png" width="20">&nbsp;&nbsp;<span>App Portfolio</span>
+        <div>  
+      </button>
+      <button type="button" class="main-btn" onclick="window.location.href=window.open(linkedInLink,'_blank');">
+        <i class="fab fa-linkedin" style="font-size: medium;">&nbsp;&nbsp;</i>LinkedIn
+      </button>
+      <button type="button" class="main-btn" onclick="window.location.href=window.open(gitLabLink,'_blank');">
+        <i class="fab fa-gitlab" style="font-size: medium;">&nbsp;&nbsp;</i>GitLab
+      </button>
+    </div>
+    <!-- End: Referral buttons -->
 
-<html>
-    <head>
-        <title>Under Mantainence</title>
-    </head>
-
-    <body>
-        <h1>
-            This website is under mantainance at the moment
-        </h1>
-    </body>
+    <!-- Begin: Sticky footer -->
+    <div id="footer" style="background-color:rgb(0, 0, 0);flex-grow: 1; flex-direction:row; display: flex; align-items: flex-end; justify-content:center; flex-wrap: wrap; ">
+      <h4 style="padding: 7px;"> Created with ❤️ and <span id="pizza">🍕</span> by Simone Formisano. </h4>
+    </div>
+    <!-- End: Sticky footer -->
+    <script type="text/javascript" src="Scripts/links.js"></script>
+    <script type="text/javascript" src="Scripts/sec.js"></script>
+  </body>
 </html>
+
